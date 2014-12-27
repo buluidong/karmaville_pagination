@@ -1,4 +1,7 @@
 <h1>KarmaVille's Most Famous</h1>
+<%= will_paginate @users, class: "pagination pagination-centered" %>
+
+
 <table class="table table-bordered table-striped">
   <tr>
     <th>Karma</th>
@@ -10,3 +13,5 @@
     <%= render 'user_row', :user => user %>
   <% end %>
 </table>
+
+<%= will_paginate @users, class: "pagination pagination-centered" %>
